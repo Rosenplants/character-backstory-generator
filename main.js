@@ -7,4 +7,4 @@ a piece of info about their lives,
 why they're setting off on adventure.
 */
 const Names = require('./names.js');
-
+const Hometowns = require('./hometowns.js');

@@ -10,7 +10,7 @@ const Names = {
         'Elliot'
     ],
 
-    selectName(){
+    select(){
         let randIndex = Math.floor(Math.random()*this.pool.length)
         return this.pool[randIndex];
     },
