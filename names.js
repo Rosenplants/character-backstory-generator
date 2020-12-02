@@ -17,4 +17,4 @@ const Names = {
 
 };
 
-module.exports = Names;
+export {Names};

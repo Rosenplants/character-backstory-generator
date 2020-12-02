@@ -17,4 +17,4 @@ const Hometowns = {
 
 };
 
-module.exports = Hometowns;
+export {Hometowns};
