@@ -7,6 +7,7 @@ const Motivation = {
         "When their mentor declared they could teach them no more,",
         "With an instrument in hand and a burning desire to find new stories to tell,",
         "With pockets full of gold and a lack of common sense,",
+        "After all their grandchildren grew up and moved away,",
     ],
 
     sadPool: [
