@@ -11,12 +11,19 @@ const Hero = {
     ],
 
     namePool: [
-        'Peter',
-        'Tina',
-        'Tanya',
-        'Clara',
-        'Jaime',
-        'Elliot'
+        'Alex',
+        'Drew',
+        'Taylor',
+        'Jordan',
+        'Jamie',
+        'Avery',
+        'Angel',
+        'Kai',
+        'Kennedy',
+        'Parker',
+        'Quinn',
+        'Riley',
+        'Rowan'
     ],
 
     selectHometown(){
