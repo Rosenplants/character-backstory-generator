@@ -51,6 +51,13 @@ const Hero = {
         "With only two pennies and the clothes on their back,",
     ],
 
+    handwriting: [
+        "'Merienda', cursive",
+        "'Sacramento', cursive",
+        "'Reenie Beanie', cursive",
+        "'Crafty Girls', cursive",
+    ],
+
     selectHometown(){
         let randIndex = Math.floor(Math.random()*this.hometownPool.length)
         return this.hometownPool[randIndex];
@@ -70,6 +77,10 @@ const Hero = {
             let randIndex = Math.floor(Math.random()*this.sadPool.length)
             return this.sadPool[randIndex];
         }
+    },
+
+    selectHandwriting(){
+        return this.handwriting[Math.floor(Math.random()*this.handwriting.length)];
     }
 
 };
@@ -78,10 +89,12 @@ function createHero(){
     let name = Hero.selectName();
     let home = Hero.selectHometown();
     let motiv = Hero.selectMotivation();
+    let handwriting = Hero.selectHandwriting();
     return {
-        name: name,
-        home: home,
-        motiv: motiv,
+        name,
+        home,
+        motiv,
+        handwriting,
     }
 };
 
@@ -93,9 +106,13 @@ button.addEventListener('click', () => {
     let docHome = document.getElementById('home');
     let docMotiv = document.getElementById('motiv');
     let story = document.getElementById('story');
+    let spans = document.getElementsByTagName('span');
 
     docName.innerHTML = adventurer.name;
     docHome.innerHTML = adventurer.home;
     docMotiv.innerHTML = adventurer.motiv;
     story.style.display = 'flex';
+    spans[0].style.fontFamily = adventurer.handwriting;
+    spans[1].style.fontFamily = adventurer.handwriting;
+    spans[2].style.fontFamily = adventurer.handwriting;
 })
