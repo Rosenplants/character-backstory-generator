@@ -112,7 +112,8 @@ button.addEventListener('click', () => {
     docHome.innerHTML = adventurer.home;
     docMotiv.innerHTML = adventurer.motiv;
     story.style.display = 'flex';
-    spans[0].style.fontFamily = adventurer.handwriting;
-    spans[1].style.fontFamily = adventurer.handwriting;
-    spans[2].style.fontFamily = adventurer.handwriting;
+    for (let i=0; i<spans.length; i++){
+        spans[i].style.fontFamily = adventurer.handwriting;
+    }
+
 })
